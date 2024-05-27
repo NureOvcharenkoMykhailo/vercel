@@ -1,1 +1,30 @@
-/home/main/public/git/github/apz-pzpi-21-4-ovcharenko-mykhailo/Task2/apz-pzpi-21-4-ovcharenko-mykhailo-task2/pyproject.toml
+[project]
+name = "lab-2"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "BubbleFish", email = "daforsastudia@gmail.com" }
+]
+dependencies = [
+    "Django>=5.0.4",
+    "djangorestframework>=3.15.1",
+    "bcrypt>=4.1.2",
+    "django-cors-headers>=4.3.1",
+    "django-import-export>=4.0.0",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lab_2"]
